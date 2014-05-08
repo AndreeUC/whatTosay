@@ -21,6 +21,7 @@
 		63500B30191926BE0027C0A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63500B12191926BE0027C0A9 /* UIKit.framework */; };
 		63500B38191926BE0027C0A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63500B36191926BE0027C0A9 /* InfoPlist.strings */; };
 		63500B3A191926BE0027C0A9 /* whatTosayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63500B39191926BE0027C0A9 /* whatTosayTests.m */; };
+		63500B4C19195C7F0027C0A9 /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63500B4A19195C7F0027C0A9 /* QuestionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		63500B35191926BE0027C0A9 /* whatTosayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whatTosayTests-Info.plist"; sourceTree = "<group>"; };
 		63500B37191926BE0027C0A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63500B39191926BE0027C0A9 /* whatTosayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whatTosayTests.m; sourceTree = "<group>"; };
+		63500B4919195C7F0027C0A9 /* QuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsViewController.h; sourceTree = "<group>"; };
+		63500B4A19195C7F0027C0A9 /* QuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				63500B20191926BE0027C0A9 /* Main.storyboard */,
 				63500B23191926BE0027C0A9 /* ViewController.h */,
 				63500B24191926BE0027C0A9 /* ViewController.m */,
+				63500B4919195C7F0027C0A9 /* QuestionsViewController.h */,
+				63500B4A19195C7F0027C0A9 /* QuestionsViewController.m */,
 				63500B26191926BE0027C0A9 /* Images.xcassets */,
 				63500B15191926BE0027C0A9 /* Supporting Files */,
 			);
@@ -251,6 +256,7 @@
 			files = (
 				63500B25191926BE0027C0A9 /* ViewController.m in Sources */,
 				63500B1F191926BE0027C0A9 /* AppDelegate.m in Sources */,
+				63500B4C19195C7F0027C0A9 /* QuestionsViewController.m in Sources */,
 				63500B1B191926BE0027C0A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +462,7 @@
 				63500B3F191926BE0027C0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63500B40191926BE0027C0A9 /* Build configuration list for PBXNativeTarget "whatTosayTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				63500B42191926BE0027C0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
