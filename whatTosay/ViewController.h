@@ -16,4 +16,5 @@
 @property (strong, nonatomic) IBOutlet UITextView *TextView;
 
 - (IBAction)start:(id)sender;
+-(IBAction)howtoplay:(id)sender;
 @end

@@ -75,12 +75,23 @@ int TipoSegue;
 
 
 
-
+-(void)howtoplay:(id)sender{
+    UIAlertView * howToPlayAlert= [[ UIAlertView alloc] initWithTitle:@"HOW TO PLAY" message:@"HOLA" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OKS", nil];
+    [  howToPlayAlert show];
+    
+}
 
 - (IBAction)start:(id)sender {
     switch (TipoSegue) {
         case 0:
             [self performSegueWithIdentifier:@"iosSegue" sender:self];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"cognosSegue" sender:self];
+            break;
+            
+        case 2:
+            [self performSegueWithIdentifier:@"androidSegue" sender:self];
             break;
             
         default:

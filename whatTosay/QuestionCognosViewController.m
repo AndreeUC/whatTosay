@@ -1,20 +1,21 @@
 //
-//  QuestionsViewController.m
+//  QuestionCognosViewController.m
 //  whatTosay
 //
-//  Created by Mac User on 5/6/14.
+//  Created by Mac User on 5/12/14.
 //  Copyright (c) 2014 systemsusa. All rights reserved.
 //
 
-#import "QuestionsViewController.h"
+#import "QuestionCognosViewController.h"
 
+@interface QuestionCognosViewController ()
 
-
-@interface QuestionsViewController ()
 @end
-@implementation QuestionsViewController
+
+@implementation QuestionCognosViewController
+
 @synthesize questionNumber,correctAnswers,wrongAnswers,points,time,timerInt;
-int contador=0;
+int contador2=0;
 
 
 -(void) updatelaberls{
@@ -72,9 +73,9 @@ int contador=0;
                                 
                                 [end show];
                                 
-                               question1.enabled=YES;
-                                contador=0;
-                               yourLevel.text=0;
+                                question1.enabled=YES;
+                                contador2=0;
+                                yourLevel.text=0;
                                 question1.enabled  =YES;
                                 
                                 question2.enabled  =NO;
@@ -89,7 +90,7 @@ int contador=0;
                                 
                                 question7.enabled  =NO;
                                 
-                               
+                                
                                 
                             }
                             
@@ -110,21 +111,21 @@ int contador=0;
 
 -(IBAction)levelselected:(id)sender{
     
-   /* question1.enabled=YES;
-    
-    question2.enabled=YES;
-    
-    question3.enabled=YES;
-    
-    question4.enabled=YES;
-    
-    question5.enabled=YES;
-    
-    question6.enabled=YES;
-    
-    question7.enabled=YES;
-    
-    */
+    /* question1.enabled=YES;
+     
+     question2.enabled=YES;
+     
+     question3.enabled=YES;
+     
+     question4.enabled=YES;
+     
+     question5.enabled=YES;
+     
+     question6.enabled=YES;
+     
+     question7.enabled=YES;
+     
+     */
     
     if (timerInt>0) {
         
@@ -144,15 +145,15 @@ int contador=0;
     
     if ([sender tag]==1) {
         
-        question.text=@"Objective-C is  used to develop in ?";
+        question.text=@"who is the best";
         
-        labelanswer1.text=@"apple hardware ";
+        labelanswer1.text=@"apple ";
         
-        labelanswer2.text=@"Toshiba hardware";
+        labelanswer2.text=@"android 2";
         
-        labelanswer3.text=@"Windows hardare";
+        labelanswer3.text=@"lg ";
         
-        labelanswer4.text=@"IBM hardware";
+        labelanswer4.text=@"no correct answer";
         
         [self setQuestionNumber:1];
         
@@ -162,15 +163,15 @@ int contador=0;
     
     if ([sender tag]==2) {
         
-        question.text=@"Who is the inventor of objective-C?";
+        question.text=@"2 * 2";
         
-        labelanswer1.text=@"Bill gates";
+        labelanswer1.text=@"8";
         
-        labelanswer2.text=@"Steve jobs";
+        labelanswer2.text=@"7";
         
-        labelanswer3.text=@"Brad cox";
+        labelanswer3.text=@"4";
         
-        labelanswer4.text=@"Linus Torvalds";
+        labelanswer4.text=@"9";
         
         [self setQuestionNumber:2];
         
@@ -180,15 +181,15 @@ int contador=0;
     
     if ([sender tag]==3){
         
-        question.text=@"Which is the last version of ios?";
+        question.text=@"Press B";
         
-        labelanswer1.text=@"5";
+        labelanswer1.text=@"a";
         
-        labelanswer2.text=@" 7.1";
+        labelanswer2.text=@"b";
         
-        labelanswer3.text=@"6.1";
+        labelanswer3.text=@"c";
         
-        labelanswer4.text=@"7.0";
+        labelanswer4.text=@"d";
         
         [self setQuestionNumber:3];
         
@@ -198,15 +199,15 @@ int contador=0;
     
     if ([sender tag]==4) {
         
-        question.text=@"What is MVC?";
+        question.text=@"Press Q";
         
-        labelanswer1.text=@"Model View Controller object";
+        labelanswer1.text=@"a";
         
-        labelanswer2.text=@"Model Variable controller pattern";
+        labelanswer2.text=@"b";
         
-        labelanswer3.text=@"Multitask View controller pattern";
+        labelanswer3.text=@"c";
         
-        labelanswer4.text=@"Mode View Controller pattern";
+        labelanswer4.text=@"no correct answer";
         
         [self setQuestionNumber:4];
         
@@ -216,15 +217,15 @@ int contador=0;
     
     if ([sender tag]==5) {
         
-        question.text=@"Data type wich allow you to combine diferents data items ?";
+        question.text=@"3 + 5 = ?";
         
-        labelanswer1.text=@"String";
+        labelanswer1.text=@"2";
         
-        labelanswer2.text=@"Struct";
+        labelanswer2.text=@"8";
         
-        labelanswer3.text=@"ID";
+        labelanswer3.text=@"9";
         
-        labelanswer4.text=@"array";
+        labelanswer4.text=@"6";
         
         [self setQuestionNumber:5];
         
@@ -234,15 +235,15 @@ int contador=0;
     
     if ([sender tag]==6) {
         
-        question.text=@"Allow you to add a method to an existing class,even if you don’t have the original source code?";
+        question.text=@"press k";
         
-        labelanswer1.text=@"Audiotoolbox framework";
+        labelanswer1.text=@"a";
         
-        labelanswer2.text=@"class extensions";
+        labelanswer2.text=@"b";
         
-        labelanswer3.text=@"Category";
+        labelanswer3.text=@"k";
         
-        labelanswer4.text=@"MVC";
+        labelanswer4.text=@"d";
         
         [self setQuestionNumber:6];
         
@@ -252,15 +253,15 @@ int contador=0;
     
     if ([sender tag]==7) {
         
-        question.text=@"Let you perform more than one action  at the same time, running independently of one another?";
+        question.text=@"Press f";
         
-        labelanswer1.text=@"Loops";
+        labelanswer1.text=@"a";
         
-        labelanswer2.text=@"Threads";
+        labelanswer2.text=@"f";
         
-        labelanswer3.text=@"Methods";
+        labelanswer3.text=@"c";
         
-        labelanswer4.text=@"dictionaries";
+        labelanswer4.text=@"b";
         
         [self setQuestionNumber:7];
         
@@ -274,11 +275,11 @@ int contador=0;
     
     yourLevel.text=level;
     
-   
+    
     [self updatelaberls];
     
     [self refresh];
-   
+    
     
     
 }
@@ -286,153 +287,153 @@ int contador=0;
 
 
 -(void)buttonEnable{
-   /* question1.enabled  =YES;
-    
-    question2.enabled  =YES;
-    
-    question3.enabled  =YES;
-    
-    question4.enabled  =YES;
-    
-    question5.enabled  =YES;
-    
-    question6.enabled  =YES;
-    
-    question7.enabled  =YES;
-    
-    */switch (contador) {
-        case 0:
+    /* question1.enabled  =YES;
      
-            question1.enabled  =YES;
+     question2.enabled  =YES;
      
-            question2.enabled  =NO;
-            
-            question4.enabled  =NO;
-            
-            question5.enabled  =NO;
-            
-            question6.enabled  =NO;
-            
-            question7.enabled  =NO;
-            
-            break;
-            
-            
-        case 1:
-            
-            question1.enabled  =YES;
-            
-            question2.enabled  =YES;
-            
-            question4.enabled  =NO;
-            
-            question5.enabled  =NO;
-            
-            question6.enabled  =NO;
-            
-            question7.enabled  =NO;
-            
-            break;
-            
-        case 2:
-            
-            question1.enabled  =YES;
-            
-            question2.enabled  =YES;
-            
-            question3.enabled  =YES;
-            
-            question4.enabled  =NO;
-            
-            question5.enabled  =NO;
-            
-            question6.enabled  =NO;
-            
-            question7.enabled  =NO;
-            
-            break;
-            
-        case 3:
-            
-            question1.enabled  =YES;
-            
-            question2.enabled  =YES;
-            
-            question3.enabled  =YES;
-            
-            question4.enabled  =YES;
-            
-            question5.enabled  =NO;
-            
-            question6.enabled  =NO;
-            
-            question7.enabled  =NO;
-            
-            break;
-            
-        case 4:
-            
-            question1.enabled  =YES;
-            
-            question2.enabled  =YES;
-            
-            question3.enabled  =YES;
-            
-            question4.enabled  =YES;
-            
-            question5.enabled  =YES;
-            
-            question6.enabled  =NO;
-            
-            question7.enabled  =NO;
-            
-            break;
-            
-        case 5:
-            
-            question1.enabled  =YES;
-            
-            question2.enabled  =YES;
-            
-            question3.enabled  =YES;
-            
-            question4.enabled  =YES;
-            
-            question5.enabled  =YES;
-            
-            question6.enabled  =YES;
-            
-            question7.enabled  =NO;
-            
-            break;
-            
-        case 6:
-            
-            question1.enabled  =YES;
-            
-            question2.enabled  =YES;
-            
-            question3.enabled  =YES;
-            
-            question4.enabled  =YES;
-            
-            question5.enabled  =YES;
-            
-            question6.enabled  =YES;
-            
-            question7.enabled  =YES;
-            
-            break;
-            
-            
-        default:
-            
-            break;
-            
-            
-    }
+     question3.enabled  =YES;
+     
+     question4.enabled  =YES;
+     
+     question5.enabled  =YES;
+     
+     question6.enabled  =YES;
+     
+     question7.enabled  =YES;
+     
+     */switch (contador2) {
+         case 0:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =NO;
+             
+             question4.enabled  =NO;
+             
+             question5.enabled  =NO;
+             
+             question6.enabled  =NO;
+             
+             question7.enabled  =NO;
+             
+             break;
+             
+             
+         case 1:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =YES;
+             
+             question4.enabled  =NO;
+             
+             question5.enabled  =NO;
+             
+             question6.enabled  =NO;
+             
+             question7.enabled  =NO;
+             
+             break;
+             
+         case 2:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =YES;
+             
+             question3.enabled  =YES;
+             
+             question4.enabled  =NO;
+             
+             question5.enabled  =NO;
+             
+             question6.enabled  =NO;
+             
+             question7.enabled  =NO;
+             
+             break;
+             
+         case 3:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =YES;
+             
+             question3.enabled  =YES;
+             
+             question4.enabled  =YES;
+             
+             question5.enabled  =NO;
+             
+             question6.enabled  =NO;
+             
+             question7.enabled  =NO;
+             
+             break;
+             
+         case 4:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =YES;
+             
+             question3.enabled  =YES;
+             
+             question4.enabled  =YES;
+             
+             question5.enabled  =YES;
+             
+             question6.enabled  =NO;
+             
+             question7.enabled  =NO;
+             
+             break;
+             
+         case 5:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =YES;
+             
+             question3.enabled  =YES;
+             
+             question4.enabled  =YES;
+             
+             question5.enabled  =YES;
+             
+             question6.enabled  =YES;
+             
+             question7.enabled  =NO;
+             
+             break;
+             
+         case 6:
+             
+             question1.enabled  =YES;
+             
+             question2.enabled  =YES;
+             
+             question3.enabled  =YES;
+             
+             question4.enabled  =YES;
+             
+             question5.enabled  =YES;
+             
+             question6.enabled  =YES;
+             
+             question7.enabled  =YES;
+             
+             break;
+             
+             
+         default:
+             
+             break;
+             
+             
+     }
     
-   
+    
 }
 
 -(void) alertVoid{
@@ -440,7 +441,7 @@ int contador=0;
     timerInt += 1;
     
     yourtime.text=[[ NSString alloc] initWithFormat:@"your time... %d",timerInt];
-   
+    
     
     
 }
@@ -455,8 +456,8 @@ int contador=0;
     correctWrong.text= [[ NSString alloc] initWithFormat:@"Correct! Points + %d", calculateScore];
     
     [self setPoints:[self points] + calculateScore];
-   contador=contador+1;
-    switch (contador) {
+    contador2=contador2+1;
+    switch (contador2) {
         case 0:
             
             question1.enabled  =YES;
@@ -588,7 +589,7 @@ int contador=0;
             
     }
     
-
+    
     
     
     if (questionNumber==1) {
@@ -656,8 +657,8 @@ int contador=0;
     [self updatelaberls];
     
     [self endOfGame];
-
-   
+    
+    
 }
 
 
@@ -977,7 +978,7 @@ int contador=0;
     
     
     [self updatelaberls];
-   
+    
     
 }
 
@@ -994,12 +995,12 @@ int contador=0;
             exit(0);
         }
     }
-        else{
+    else{
         
-    
+        
         
         if (buttonIndex==1 || buttonIndex==0) {
-    
+            
             [time  invalidate];
             
             [self setTimerInt:0];
@@ -1013,7 +1014,7 @@ int contador=0;
             [self setWrongAnswers:0];
             
             [self setQuestionNumber:0];
-    
+            
             question1.hidden=NO;
             
             question2.hidden=NO;
@@ -1028,7 +1029,7 @@ int contador=0;
             
             question7.hidden=NO;
             
-    
+            
             question.text=@"chose level";
             
             labelanswer1.text=@"";
@@ -1043,12 +1044,12 @@ int contador=0;
             
             [self updatelaberls];
         }
-            
-           
-            
-     
         
-   }
+        
+        
+        
+        
+    }
     
     
     
@@ -1063,7 +1064,7 @@ int contador=0;
     [alertviewquit setTag:3];
     
     [alertviewquit show];
-  
+    
     
 }
 
@@ -1089,7 +1090,7 @@ int contador=0;
 - (void)viewDidLoad
 
 {
-   
+    
     question1.enabled  =YES;
     
     question2.enabled  =NO;
@@ -1123,6 +1124,4 @@ int contador=0;
 }
 
 
-
 @end
-

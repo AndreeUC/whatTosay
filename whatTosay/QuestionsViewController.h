@@ -51,6 +51,8 @@ int calculateScore;
 -(IBAction)levelselected:(id)sender;
 -(IBAction)answer:(id)sender;
 
+- (IBAction)quit:(id)sender;
+
 
 @property int correctAnswers;
 @property int wrongAnswers;
