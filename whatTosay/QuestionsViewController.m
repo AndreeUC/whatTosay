@@ -25,7 +25,7 @@ int contador=0;
     
     yourPoints.text=[[NSString alloc] initWithFormat:@"%d", points];
     
-    yourtime.text=[[NSString alloc] initWithFormat:@"your time is..%d", timerInt];
+    yourtime.text=[[NSString alloc] initWithFormat:@"Your time is..%d", timerInt];
     
     
 }
@@ -88,6 +88,12 @@ int contador=0;
                                 question6.enabled  =NO;
                                 
                                 question7.enabled  =NO;
+                                 check1.hidden=YES;
+                                check2.hidden=YES;
+                                check3.hidden=YES;
+                                check4.hidden=YES;
+                                check5.hidden=YES;
+                                check6.hidden=YES;
                                 
                                
                                 
@@ -439,7 +445,7 @@ int contador=0;
     
     timerInt += 1;
     
-    yourtime.text=[[ NSString alloc] initWithFormat:@"your time... %d",timerInt];
+    yourtime.text=[[ NSString alloc] initWithFormat:@"Hurry up... %d",timerInt];
    
     
     
@@ -449,8 +455,9 @@ int contador=0;
     
     [self setCorrectAnswers:[self correctAnswers] +1];
     
-    
+    [self playsoundcorrect];
     calculateScore=100/ (timerInt+1);
+    cross.hidden=YES;
     
     correctWrong.text= [[ NSString alloc] initWithFormat:@"Correct! Points + %d", calculateScore];
     
@@ -475,7 +482,8 @@ int contador=0;
             
             
         case 1:
-            
+           
+            check1.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -491,6 +499,7 @@ int contador=0;
             break;
             
         case 2:
+            check2.hidden=NO;
             
             question1.enabled  =YES;
             
@@ -509,6 +518,7 @@ int contador=0;
             break;
             
         case 3:
+            check3.hidden=NO;
             
             question1.enabled  =YES;
             
@@ -527,6 +537,7 @@ int contador=0;
             break;
             
         case 4:
+            check4.hidden=NO;
             
             question1.enabled  =YES;
             
@@ -545,7 +556,7 @@ int contador=0;
             break;
             
         case 5:
-            
+            check5.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -563,7 +574,7 @@ int contador=0;
             break;
             
         case 6:
-            
+            check6.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -665,8 +676,10 @@ int contador=0;
 -(void)wrongAnswer{
     
     [self setWrongAnswers:[self wrongAnswers] +1];
-    [self setPoints:[self points]-50];
-    correctWrong.text=@"Wrong... - 50 points ";
+    [self setPoints:[self points]-30];
+    correctWrong.text=@"Wrong... - 30 points ";
+    cross.hidden=NO;
+    [self playsoundwrong];
     
 }
 
@@ -976,7 +989,7 @@ int contador=0;
     NSLog(@"answer chosen= %@",answerChosen);
     
     
-    [self updatelaberls];
+    //[self updatelaberls];
    
     
 }
@@ -1084,6 +1097,27 @@ int contador=0;
     
 }
 
+-(void) playsoundcorrect{
+    CFBundleRef mainBundle= CFBundleGetMainBundle();
+    CFURLRef soundFileUrl;
+    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"goodjob", CFSTR("mp3"),NULL);
+    UInt32 soundID;
+    AudioServicesCreateSystemSoundID(soundFileUrl, &soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    
+}
+
+-(void) playsoundwrong{
+    CFBundleRef mainBundle= CFBundleGetMainBundle();
+    CFURLRef soundFileUrl;
+    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"wrong", CFSTR("mp3"),NULL);
+    UInt32 soundID;
+    AudioServicesCreateSystemSoundID(soundFileUrl, &soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    
+}
 
 
 - (void)viewDidLoad

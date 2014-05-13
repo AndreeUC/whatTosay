@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		632C10C419211602009B1004 /* questionAndroidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C10C319211602009B1004 /* questionAndroidViewController.m */; };
 		632C10C719211957009B1004 /* QuestionCognosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C10C619211957009B1004 /* QuestionCognosViewController.m */; };
+		632C10CE1921B35A009B1004 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 632C10CC1921B35A009B1004 /* cross.png */; };
+		632C10DB1921D254009B1004 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 632C10DA1921D254009B1004 /* check.png */; };
+		63432C8219226271001C6480 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63432C8119226271001C6480 /* AudioToolbox.framework */; };
+		63432C88192262B0001C6480 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63432C84192262B0001C6480 /* correct.mp3 */; };
+		63432C89192262B0001C6480 /* correct.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 63432C85192262B0001C6480 /* correct.PNG */; };
+		63432C8A192262B0001C6480 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63432C86192262B0001C6480 /* wrong.mp3 */; };
+		63432C8B192262B0001C6480 /* wrong.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 63432C87192262B0001C6480 /* wrong.PNG */; };
 		63500B0F191926BE0027C0A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63500B0E191926BE0027C0A9 /* Foundation.framework */; };
 		63500B11191926BE0027C0A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63500B10191926BE0027C0A9 /* CoreGraphics.framework */; };
 		63500B13191926BE0027C0A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63500B12191926BE0027C0A9 /* UIKit.framework */; };
@@ -24,6 +31,10 @@
 		63500B38191926BE0027C0A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63500B36191926BE0027C0A9 /* InfoPlist.strings */; };
 		63500B3A191926BE0027C0A9 /* whatTosayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63500B39191926BE0027C0A9 /* whatTosayTests.m */; };
 		63500B4C19195C7F0027C0A9 /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63500B4A19195C7F0027C0A9 /* QuestionsViewController.m */; };
+		63D1B20F19227BE500454538 /* MetroUI-Folder-OS-OS-Apple-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D1B20C19227BE500454538 /* MetroUI-Folder-OS-OS-Apple-icon.png */; };
+		63D1B21019227BE500454538 /* android-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D1B20D19227BE500454538 /* android-logo.png */; };
+		63D1B21119227BE500454538 /* java.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D1B20E19227BE500454538 /* java.png */; };
+		63D529CD1922A40200425EF4 /* goodjob.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63D529CC1922A40200425EF4 /* goodjob.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +52,13 @@
 		632C10C319211602009B1004 /* questionAndroidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = questionAndroidViewController.m; sourceTree = "<group>"; };
 		632C10C519211957009B1004 /* QuestionCognosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCognosViewController.h; sourceTree = "<group>"; };
 		632C10C619211957009B1004 /* QuestionCognosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCognosViewController.m; sourceTree = "<group>"; };
+		632C10CC1921B35A009B1004 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		632C10DA1921D254009B1004 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		63432C8119226271001C6480 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		63432C84192262B0001C6480 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		63432C85192262B0001C6480 /* correct.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.PNG; sourceTree = "<group>"; };
+		63432C86192262B0001C6480 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		63432C87192262B0001C6480 /* wrong.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong.PNG; sourceTree = "<group>"; };
 		63500B0B191926BE0027C0A9 /* whatTosay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatTosay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63500B0E191926BE0027C0A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63500B10191926BE0027C0A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +80,10 @@
 		63500B39191926BE0027C0A9 /* whatTosayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whatTosayTests.m; sourceTree = "<group>"; };
 		63500B4919195C7F0027C0A9 /* QuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsViewController.h; sourceTree = "<group>"; };
 		63500B4A19195C7F0027C0A9 /* QuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsViewController.m; sourceTree = "<group>"; };
+		63D1B20C19227BE500454538 /* MetroUI-Folder-OS-OS-Apple-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MetroUI-Folder-OS-OS-Apple-icon.png"; path = "../../../Downloads/MetroUI-Folder-OS-OS-Apple-icon.png"; sourceTree = "<group>"; };
+		63D1B20D19227BE500454538 /* android-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "android-logo.png"; path = "../../../Downloads/android-logo.png"; sourceTree = "<group>"; };
+		63D1B20E19227BE500454538 /* java.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = java.png; path = ../../../Downloads/java.png; sourceTree = "<group>"; };
+		63D529CC1922A40200425EF4 /* goodjob.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = goodjob.mp3; path = ../../../Downloads/goodjob.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63432C8219226271001C6480 /* AudioToolbox.framework in Frameworks */,
 				63500B11191926BE0027C0A9 /* CoreGraphics.framework in Frameworks */,
 				63500B13191926BE0027C0A9 /* UIKit.framework in Frameworks */,
 				63500B0F191926BE0027C0A9 /* Foundation.framework in Frameworks */,
@@ -88,6 +111,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632C10DC1921D9FB009B1004 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				63D529CC1922A40200425EF4 /* goodjob.mp3 */,
+				63D1B20C19227BE500454538 /* MetroUI-Folder-OS-OS-Apple-icon.png */,
+				63D1B20D19227BE500454538 /* android-logo.png */,
+				63D1B20E19227BE500454538 /* java.png */,
+				63432C83192262B0001C6480 /* CorrectAndWrongSoundEffect */,
+				632C10DA1921D254009B1004 /* check.png */,
+				632C10CC1921B35A009B1004 /* cross.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		63432C83192262B0001C6480 /* CorrectAndWrongSoundEffect */ = {
+			isa = PBXGroup;
+			children = (
+				63432C84192262B0001C6480 /* correct.mp3 */,
+				63432C85192262B0001C6480 /* correct.PNG */,
+				63432C86192262B0001C6480 /* wrong.mp3 */,
+				63432C87192262B0001C6480 /* wrong.PNG */,
+			);
+			name = CorrectAndWrongSoundEffect;
+			path = ../../../Downloads/CorrectAndWrongSoundEffect;
+			sourceTree = "<group>";
+		};
 		63500B02191926BE0027C0A9 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +159,7 @@
 		63500B0D191926BE0027C0A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63432C8119226271001C6480 /* AudioToolbox.framework */,
 				63500B0E191926BE0027C0A9 /* Foundation.framework */,
 				63500B10191926BE0027C0A9 /* CoreGraphics.framework */,
 				63500B12191926BE0027C0A9 /* UIKit.framework */,
@@ -132,6 +182,7 @@
 				632C10C319211602009B1004 /* questionAndroidViewController.m */,
 				632C10C519211957009B1004 /* QuestionCognosViewController.h */,
 				632C10C619211957009B1004 /* QuestionCognosViewController.m */,
+				632C10DC1921D9FB009B1004 /* images */,
 				63500B26191926BE0027C0A9 /* Images.xcassets */,
 				63500B15191926BE0027C0A9 /* Supporting Files */,
 			);
@@ -245,7 +296,17 @@
 			files = (
 				63500B27191926BE0027C0A9 /* Images.xcassets in Resources */,
 				63500B19191926BE0027C0A9 /* InfoPlist.strings in Resources */,
+				632C10DB1921D254009B1004 /* check.png in Resources */,
+				63D1B21019227BE500454538 /* android-logo.png in Resources */,
+				632C10CE1921B35A009B1004 /* cross.png in Resources */,
+				63D1B21119227BE500454538 /* java.png in Resources */,
+				63432C8B192262B0001C6480 /* wrong.PNG in Resources */,
+				63432C8A192262B0001C6480 /* wrong.mp3 in Resources */,
 				63500B22191926BE0027C0A9 /* Main.storyboard in Resources */,
+				63432C89192262B0001C6480 /* correct.PNG in Resources */,
+				63432C88192262B0001C6480 /* correct.mp3 in Resources */,
+				63D529CD1922A40200425EF4 /* goodjob.mp3 in Resources */,
+				63D1B20F19227BE500454538 /* MetroUI-Folder-OS-OS-Apple-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

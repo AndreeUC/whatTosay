@@ -90,7 +90,12 @@ int contador2=0;
                                 
                                 question7.enabled  =NO;
                                 
-                                
+                                check1.hidden=YES;
+                                check2.hidden=YES;
+                                check3.hidden=YES;
+                                check4.hidden=YES;
+                                check5.hidden=YES;
+                                check6.hidden=YES;
                                 
                             }
                             
@@ -145,15 +150,15 @@ int contador2=0;
     
     if ([sender tag]==1) {
         
-        question.text=@"who is the best";
+        question.text=@"Who create java?";
         
-        labelanswer1.text=@"apple ";
+        labelanswer1.text=@"Sun Microsystems ";//
         
-        labelanswer2.text=@"android 2";
+        labelanswer2.text=@"Microsoft";
         
-        labelanswer3.text=@"lg ";
+        labelanswer3.text=@"apple";
         
-        labelanswer4.text=@"no correct answer";
+        labelanswer4.text=@"IBM";
         
         [self setQuestionNumber:1];
         
@@ -163,15 +168,15 @@ int contador2=0;
     
     if ([sender tag]==2) {
         
-        question.text=@"2 * 2";
+        question.text=@"is used just before an object is destroyed and can be called just prior to garbage collection?";
         
-        labelanswer1.text=@"8";
+        labelanswer1.text=@"final";
         
-        labelanswer2.text=@"7";
+        labelanswer2.text=@"finally";
         
-        labelanswer3.text=@"4";
+        labelanswer3.text=@"final()";
         
-        labelanswer4.text=@"9";
+        labelanswer4.text=@"finalize()";//
         
         [self setQuestionNumber:2];
         
@@ -181,15 +186,15 @@ int contador2=0;
     
     if ([sender tag]==3){
         
-        question.text=@"Press B";
+        question.text=@"Specifies from where you can access a variable and whether you have access to the variable in that context?";
         
-        labelanswer1.text=@"a";
+        labelanswer1.text=@"variables hosting";
         
-        labelanswer2.text=@"b";
+        labelanswer2.text=@"Pluggable Annotation";
         
-        labelanswer3.text=@"c";
+        labelanswer3.text=@"Variable Scope";//
         
-        labelanswer4.text=@"d";
+        labelanswer4.text=@"Scripting";
         
         [self setQuestionNumber:3];
         
@@ -199,15 +204,15 @@ int contador2=0;
     
     if ([sender tag]==4) {
         
-        question.text=@"Press Q";
+        question.text=@"Specifies whether the property of an object can be deleted or changed?";
         
-        labelanswer1.text=@"a";
+        labelanswer1.text=@"Scripting";
         
-        labelanswer2.text=@"b";
+        labelanswer2.text=@"Enumarable";//
         
-        labelanswer3.text=@"c";
+        labelanswer3.text=@"Configurable Attribute";
         
-        labelanswer4.text=@"no correct answer";
+        labelanswer4.text=@"Writable";
         
         [self setQuestionNumber:4];
         
@@ -217,15 +222,15 @@ int contador2=0;
     
     if ([sender tag]==5) {
         
-        question.text=@"3 + 5 = ?";
+        question.text=@"is the superclass of all menu-related components?";
         
-        labelanswer1.text=@"2";
+        labelanswer1.text=@"MenuComponent";//
         
-        labelanswer2.text=@"8";
+        labelanswer2.text=@"MenuShortcut";
         
-        labelanswer3.text=@"9";
+        labelanswer3.text=@"MenuBar";
         
-        labelanswer4.text=@"6";
+        labelanswer4.text=@"CheckboxMenuItem";
         
         [self setQuestionNumber:5];
         
@@ -235,15 +240,15 @@ int contador2=0;
     
     if ([sender tag]==6) {
         
-        question.text=@"press k";
+        question.text=@"is simply a set of constants to represent various values?";
         
-        labelanswer1.text=@"a";
+        labelanswer1.text=@"Enumerations";//
         
-        labelanswer2.text=@"b";
+        labelanswer2.text=@"Generic methods";
         
-        labelanswer3.text=@"k";
+        labelanswer3.text=@"serialization";
         
-        labelanswer4.text=@"d";
+        labelanswer4.text=@"Pluggable Annotation";
         
         [self setQuestionNumber:6];
         
@@ -253,15 +258,15 @@ int contador2=0;
     
     if ([sender tag]==7) {
         
-        question.text=@"Press f";
+        question.text=@"is a class that is “parameterized” with a type?";
         
-        labelanswer1.text=@"a";
+        labelanswer1.text=@"abstract classes ";
         
-        labelanswer2.text=@"f";
+        labelanswer2.text=@"private classes";
         
-        labelanswer3.text=@"c";
+        labelanswer3.text=@"generic classes";//
         
-        labelanswer4.text=@"b";
+        labelanswer4.text=@"inner classes";
         
         [self setQuestionNumber:7];
         
@@ -440,7 +445,7 @@ int contador2=0;
     
     timerInt += 1;
     
-    yourtime.text=[[ NSString alloc] initWithFormat:@"your time... %d",timerInt];
+    yourtime.text=[[ NSString alloc] initWithFormat:@"Hurry up... %d",timerInt];
     
     
     
@@ -449,10 +454,10 @@ int contador2=0;
 - (void)correctAnswer{
     
     [self setCorrectAnswers:[self correctAnswers] +1];
-    
+    [self playsoundcorrect];
     
     calculateScore=100/ (timerInt+1);
-    
+    cross.hidden=YES;
     correctWrong.text= [[ NSString alloc] initWithFormat:@"Correct! Points + %d", calculateScore];
     
     [self setPoints:[self points] + calculateScore];
@@ -476,7 +481,7 @@ int contador2=0;
             
             
         case 1:
-            
+            check1.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -492,7 +497,7 @@ int contador2=0;
             break;
             
         case 2:
-            
+            check2.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -510,7 +515,7 @@ int contador2=0;
             break;
             
         case 3:
-            
+            check3.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -528,7 +533,7 @@ int contador2=0;
             break;
             
         case 4:
-            
+            check4.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -546,7 +551,7 @@ int contador2=0;
             break;
             
         case 5:
-            
+            check5.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -564,7 +569,7 @@ int contador2=0;
             break;
             
         case 6:
-            
+            check6.hidden=NO;
             question1.enabled  =YES;
             
             question2.enabled  =YES;
@@ -664,11 +669,11 @@ int contador2=0;
 
 
 -(void)wrongAnswer{
-    
+    cross.hidden=NO;
     [self setWrongAnswers:[self wrongAnswers] +1];
-    [self setPoints:[self points]-50];
-    correctWrong.text=@"Wrong... - 50 points ";
-    
+    [self setPoints:[self points]-30];
+    correctWrong.text=@"Wrong... - 30 points ";
+    [self playsoundwrong];
 }
 
 
@@ -722,7 +727,7 @@ int contador2=0;
         
         if (questionNumber==5) {
             
-            [self wrongAnswer];
+            [self correctAnswer];
             
         }
         
@@ -732,7 +737,7 @@ int contador2=0;
         
         if (questionNumber==6) {
             
-            [self wrongAnswer];
+            [self correctAnswer];
             
         }
         
@@ -776,7 +781,7 @@ int contador2=0;
         
         if (questionNumber==3) {
             
-            [self correctAnswer];
+            [self wrongAnswer];
             
         }
         
@@ -786,7 +791,7 @@ int contador2=0;
         
         if (questionNumber==4) {
             
-            [self wrongAnswer];
+            [self correctAnswer];
             
         }
         
@@ -796,7 +801,7 @@ int contador2=0;
         
         if (questionNumber==5) {
             
-            [self correctAnswer];
+            [self wrongAnswer];
             
         }
         
@@ -814,7 +819,7 @@ int contador2=0;
         
         if (questionNumber==7) {
             
-            [self correctAnswer];
+            [self wrongAnswer];
             
         }
         
@@ -840,7 +845,7 @@ int contador2=0;
         
         if (questionNumber==2) {
             
-            [self correctAnswer];
+            [self wrongAnswer];
             
         }
         
@@ -850,7 +855,7 @@ int contador2=0;
         
         if (questionNumber==3) {
             
-            [self wrongAnswer];
+            [self correctAnswer];
             
         }
         
@@ -880,7 +885,7 @@ int contador2=0;
         
         if (questionNumber==6) {
             
-            [self correctAnswer];
+            [self wrongAnswer];
             
         }
         
@@ -888,7 +893,7 @@ int contador2=0;
         
         if (questionNumber==7) {
             
-            [self wrongAnswer];
+            [self correctAnswer];
             
         }
         
@@ -914,7 +919,7 @@ int contador2=0;
         
         if (questionNumber==2) {
             
-            [self wrongAnswer];
+            [self correctAnswer];
             
         }
         
@@ -934,7 +939,7 @@ int contador2=0;
         
         if (questionNumber==4) {
             
-            [self correctAnswer];
+            [self wrongAnswer];
             
         }
         
@@ -977,7 +982,7 @@ int contador2=0;
     NSLog(@"answer chosen= %@",answerChosen);
     
     
-    [self updatelaberls];
+   // [self updatelaberls];
     
     
 }
@@ -1085,7 +1090,27 @@ int contador2=0;
     
 }
 
+-(void) playsoundcorrect{
+    CFBundleRef mainBundle= CFBundleGetMainBundle();
+    CFURLRef soundFileUrl;
+    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"correct", CFSTR("mp3"),NULL);
+    UInt32 soundID;
+    AudioServicesCreateSystemSoundID(soundFileUrl, &soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    
+}
 
+-(void) playsoundwrong{
+    CFBundleRef mainBundle= CFBundleGetMainBundle();
+    CFURLRef soundFileUrl;
+    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"wrong", CFSTR("mp3"),NULL);
+    UInt32 soundID;
+    AudioServicesCreateSystemSoundID(soundFileUrl, &soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    
+}
 
 - (void)viewDidLoad
 

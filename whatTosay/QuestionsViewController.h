@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AudioToolbox/AudioToolbox.h>
 @interface QuestionsViewController : UIViewController
 {
 
@@ -19,6 +19,16 @@ IBOutlet UIButton *question5;
 IBOutlet UIButton *question6;
 IBOutlet UIButton *question7;
 
+    IBOutlet UIImageView *check1;
+    IBOutlet UIImageView *check2;
+    IBOutlet UIImageView *check3;
+    IBOutlet UIImageView *check4;
+    IBOutlet UIImageView *check5;
+    IBOutlet UIImageView *check6;
+    IBOutlet UIImageView *check7;
+    
+    IBOutlet UIImageView *cross;
+    
 IBOutlet UIButton *answer1;
 IBOutlet UIButton *answer2;
 IBOutlet UIButton *answer3;
