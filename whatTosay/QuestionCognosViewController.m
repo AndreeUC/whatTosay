@@ -1093,7 +1093,7 @@ int contador2=0;
 -(void) playsoundcorrect{
     CFBundleRef mainBundle= CFBundleGetMainBundle();
     CFURLRef soundFileUrl;
-    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"correct", CFSTR("mp3"),NULL);
+    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"goodjob", CFSTR("mp3"),NULL);
     UInt32 soundID;
     AudioServicesCreateSystemSoundID(soundFileUrl, &soundID);
     AudioServicesPlaySystemSound(soundID);

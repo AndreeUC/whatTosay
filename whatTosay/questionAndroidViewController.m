@@ -263,7 +263,7 @@ int contador1=0;
         
         labelanswer2.text=@"OpenGL";
         
-        labelanswer3.text=@"c";
+        labelanswer3.text=@"SharePreferences";
         
         labelanswer4.text=@"Surface Manager";
         
@@ -1093,7 +1093,7 @@ int contador1=0;
 -(void) playsoundcorrect{
     CFBundleRef mainBundle= CFBundleGetMainBundle();
     CFURLRef soundFileUrl;
-    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"correct", CFSTR("mp3"),NULL);
+    soundFileUrl= CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"goodjob", CFSTR("mp3"),NULL);
     UInt32 soundID;
     AudioServicesCreateSystemSoundID(soundFileUrl, &soundID);
     AudioServicesPlaySystemSound(soundID);
